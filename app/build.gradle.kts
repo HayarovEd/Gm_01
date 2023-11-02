@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "xo.appsforlife.DietMagic"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "xo.appsforlife.DietMagic"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -66,4 +66,10 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+
+    //Appsflyer
+    implementation ("com.appsflyer:af-android-sdk:6.12.2")
+    //One Signal
+    implementation("com.onesignal:OneSignal:[5.0.0, 5.99.99]")
 }
